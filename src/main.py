@@ -11,9 +11,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## assets
-from storybuilder.assets import basic
+from storybuilder.assets import accessory, basic
 ## local files
-from config import DAYS, ITEMS, LAYERS, PERSONS, RUBIS, STAGES, TIMES, WORDS
+from config import AREAS, DAYS, ITEMS, LAYERS, PERSONS, RUBIS, STAGES, TIMES, WORDS
 from src.demo.main import ep_demo
 
 ## define alias
@@ -55,14 +55,17 @@ def create_world():
     w = World("title")
     w.setCommonData()
     w.setAssets(basic.ASSET)
+    w.setAssets(accessory.ASSET)
     w.buildDB(PERSONS,
-            STAGES, ITEMS, DAYS, TIMES, WORDS,
+            AREAS, STAGES, ITEMS, DAYS, TIMES, WORDS,
             RUBIS, LAYERS)
     # w.setBaseDate()
+    # w.setBaseArea()
     # set textures
     # w.entryBlock()
     # w.entryHistory()
     # w.entryLifeNote()
+    w.setOutline("__outline__")
     return w
 
 

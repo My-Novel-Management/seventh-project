@@ -29,8 +29,12 @@ PERSONS = (
         # Tag / 氏,名 / 歳 / 誕生日 / 性別 / 職業 / 呼称 / 紹介
         )
 
+AREAS = (
+        # Tag / 名前 / x,y / 備考
+        )
+
 STAGES = (
-        # Tag / 名前 / 紹介
+        # Tag / 名前 / Area / 紹介
         )
 
 DAYS = (
@@ -50,7 +54,7 @@ WORDS = (
         )
 
 RUBIS = (
-        # Base / Rubi / Type
+        # Base / Rubi / Exclusion / Type
         )
 
 LAYERS = (
