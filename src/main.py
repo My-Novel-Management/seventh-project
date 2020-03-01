@@ -12,9 +12,20 @@ from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## assets
 from storybuilder.assets import accessory, basic
-## local files
 from config import AREAS, DAYS, ITEMS, LAYERS, PERSONS, RUBIS, STAGES, TIMES, WORDS
-from src.demo.main import ep_demo
+## local files
+from src.c01_hestia.main import ch_hestia
+from src.c02_poseidon.main import ch_poseidon
+from src.c03_hermes.main import ch_hermes
+from src.c04_hephaistos.main import ch_hephaistos
+from src.c05_demeter.main import ch_demeter
+from src.c06_artemis.main import ch_artemis
+from src.c07_ares.main import ch_ares
+from src.c08_aphrodite.main import ch_aphrodite
+from src.c09_apollon.main import ch_apollon
+from src.c10_athena.main import ch_athena
+from src.c11_hera.main import ch_hera
+from src.c12_zeus.main import ch_zeus
 
 ## define alias
 W = Writer
@@ -44,15 +55,10 @@ _ = Writer.getWho()
 
 
 ## main
-def ch_main(w: World):
-    return w.chapter("main",
-            ep_demo(w),
-            )
-
 def create_world():
     """Create a world.
     """
-    w = World("title")
+    w = World("セブンス・サピエンス")
     w.setCommonData()
     w.setAssets(basic.ASSET)
     w.setAssets(accessory.ASSET)
@@ -65,14 +71,25 @@ def create_world():
     # w.entryBlock()
     # w.entryHistory()
     # w.entryLifeNote()
-    w.setOutline("__outline__")
+    w.setOutline("機械と人類が融合し、第六人類と呼ばれる新しい人間たちが暮らしていた。しかしその研究所では次なる第七人類を目指し、子どもたちを集め、実験がなされていた。だがある日、通信網が一斉に途切れ、世界は混乱する")
     return w
 
 
 def main(): # pragma: no cover
     w = create_world()
     return w.build(
-            ch_main(w),
+            ch_hestia(w),
+            ch_poseidon(w),
+            ch_hermes(w),
+            ch_hephaistos(w),
+            ch_demeter(w),
+            ch_artemis(w),
+            ch_ares(w),
+            ch_aphrodite(w),
+            ch_apollon(w),
+            ch_athena(w),
+            ch_hera(w),
+            ch_zeus(w),
             )
 
 
