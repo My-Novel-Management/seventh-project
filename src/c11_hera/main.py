@@ -18,4 +18,4 @@ _ = W.getWho()
 def ch_hera(w: World):
     return w.chapter("ヘラの嫉妬",
             ## NOTE
-            )
+            note="最下位になったスピカが姿を消し、次々に脱落者が出る")

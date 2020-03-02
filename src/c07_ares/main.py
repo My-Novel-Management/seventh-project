@@ -18,4 +18,4 @@ _ = W.getWho()
 def ch_ares(w: World):
     return w.chapter("アレスの悲哀",
             ## NOTE
-            )
+            note="砂漠を横断中、遊牧民の村にやってきたアルたち。そこでスピカは恋に落ちる")

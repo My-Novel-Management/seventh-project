@@ -18,4 +18,4 @@ _ = W.getWho()
 def ch_apollon(w: World):
     return w.chapter("アポロンの殺意",
             ## NOTE
-            )
+            note="カノープスを加えて雪山に向かったが、途中でベガのギアが不調になり、二班に分裂してしまう")

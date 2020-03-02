@@ -17,5 +17,5 @@ _ = W.getWho()
 ## main
 def ch_zeus(w: World):
     return w.chapter("ゼウスの空虚",
-            ## NOTE
-            )
+            ## NOTE: 教授による説明
+            note="アルの前に現れた教授はセブンス・プロジェクトの本当の目的について語り始める")

@@ -18,4 +18,4 @@ _ = W.getWho()
 def ch_artemis(w: World):
     return w.chapter("アルテミスの後悔",
             ## NOTE
-            )
+            note="首都に到着したアルたち。そこで再び蟲型に襲われるも、デネボラによって助けられた")

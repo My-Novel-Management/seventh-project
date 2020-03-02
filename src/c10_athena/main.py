@@ -18,4 +18,4 @@ _ = W.getWho()
 def ch_athena(w: World):
     return w.chapter("アテナの優越",
             ## NOTE
-            )
+            note="ついに楽園へと到達したアルたち。そこでは教授やアトリアによく似たスタッフたちが待っていた")

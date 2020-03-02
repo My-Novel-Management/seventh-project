@@ -18,4 +18,4 @@ _ = W.getWho()
 def ch_aphrodite(w: World):
     return w.chapter("アプロディテの疑念",
             ## NOTE
-            )
+            note="山岳地帯に入ったアルたちだが、野営中に誰かに襲われる。それは別のセブンスの生き残りだった")

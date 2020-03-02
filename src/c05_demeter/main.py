@@ -18,4 +18,4 @@ _ = W.getWho()
 def ch_demeter(w: World):
     return w.chapter("デメテルの信頼",
             ## NOTE
-            )
+            note="大陸横断鉄道で首都に向かう一行だったが、途中で蟲型に襲われる")
