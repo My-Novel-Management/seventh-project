@@ -18,4 +18,4 @@ _ = W.getWho()
 def ch_hermes(w: World):
     return w.chapter("ヘルメスの驚愕",
             ## NOTE
-            )
+            note="教授の衝撃のメッセージにより脱出することになったアルたち。だがラボの外には大量の蟲型が迫っていた")

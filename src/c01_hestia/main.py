@@ -18,4 +18,4 @@ _ = W.getWho()
 def ch_hestia(w: World):
     return w.chapter("ヘスティアの畏怖",
             ## NOTE
-            )
+            note="第七ラボ。そこではセブンス・サピエンスの研究と実験が行われていた")

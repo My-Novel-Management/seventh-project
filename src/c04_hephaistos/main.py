@@ -18,4 +18,4 @@ _ = W.getWho()
 def ch_hephaistos(w: World):
     return w.chapter("ヘパイストスの焦燥",
             ## NOTE
-            )
+            note="ブロイセルの街にやってきたアルたちだったが、そこで初めての人の悪意を体験することになる")

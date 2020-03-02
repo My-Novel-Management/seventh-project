@@ -18,4 +18,4 @@ _ = W.getWho()
 def ch_poseidon(w: World):
     return w.chapter("ポセイドンの憤怒",
             ## NOTE
-            )
+            note="アトリアが殺された。だが教授たちはいない。残されたアルたちは犯人探しを始めるが")
