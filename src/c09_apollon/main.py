@@ -8,7 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-
+from src.c09_apollon.e_division import ep_division
+from src.c09_apollon.e_eachthought import ep_eachthought
+from src.c09_apollon.e_porttown import ep_porttown
 ## defines
 W = Writer
 _ = W.getWho()
@@ -16,7 +18,10 @@ _ = W.getWho()
 
 ## main
 def ch_apollon(w: World):
-    return w.chapter("アポロンの殺意",
+    return w.chapter("第九章　アポロンの殺意",
+            ep_division(w),
+            ep_eachthought(w),
+            ep_porttown(w),
             ## NOTE
             ##  - 雪山に入り、ベガがギアの不調を訴え、動けなくなる
             ##  - 置いていくというカノープスと意見が割れ、二班に分かれて行動することになったアルたち

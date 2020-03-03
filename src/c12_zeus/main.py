@@ -18,7 +18,7 @@ _ = W.getWho()
 
 ## main
 def ch_zeus(w: World):
-    return w.chapter("ゼウスの空虚",
+    return w.chapter("第十二章　ゼウスの空虚",
             ep_doc_talk(w),
             ep_deneb(w),
             ep_epilogue(w),

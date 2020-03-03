@@ -8,7 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-
+from src.c07_ares.e_admire import ep_admire
+from src.c07_ares.e_heartbreak import ep_heartbreak
+from src.c07_ares.e_inoasis import ep_in_oasis
 ## defines
 W = Writer
 _ = W.getWho()
@@ -16,7 +18,10 @@ _ = W.getWho()
 
 ## main
 def ch_ares(w: World):
-    return w.chapter("アレスの悲哀",
+    return w.chapter("第七章　アレスの悲哀",
+            ep_in_oasis(w),
+            ep_admire(w),
+            ep_heartbreak(w),
             ## NOTE
             ##  - 砂漠をバギーで横断するアルたちは、途中のオアシスの村に立ち寄る
             ##  - 遊牧民の若きリーダーに恋をしたスピカは駆け落ちしてしまう

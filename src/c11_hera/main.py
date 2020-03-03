@@ -18,7 +18,7 @@ _ = W.getWho()
 
 ## main
 def ch_hera(w: World):
-    return w.chapter("ヘラの嫉妬",
+    return w.chapter("第十一章　ヘラの嫉妬",
             ep_exception(w),
             ep_goodbye(w),
             ep_murder_true(w),

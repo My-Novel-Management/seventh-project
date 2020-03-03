@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Episode: title
+"""Episode: 9-1.分断
 """
 ## path
 import os
@@ -19,7 +19,7 @@ _ = W.getWho()
 ## scenes
 
 ## episode
-def ep_(w: World):
-    return w.episode("__episode__",
+def ep_division(w: World):
+    return w.episode("1.分断",
             ## NOTE
             )

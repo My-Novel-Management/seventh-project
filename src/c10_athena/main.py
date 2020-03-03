@@ -18,7 +18,7 @@ _ = W.getWho()
 
 ## main
 def ch_athena(w: World):
-    return w.chapter("アテナの優越",
+    return w.chapter("第十章　アテナの優越",
             ep_rakuen(w),
             ep_competitive(w),
             ep_firstdead(w),

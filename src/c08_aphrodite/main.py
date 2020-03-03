@@ -8,7 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-
+from src.c08_aphrodite.e_canopus import ep_canopus
+from src.c08_aphrodite.e_mountpath import ep_mount_path
+from src.c08_aphrodite.e_newmember import ep_new_member
 ## defines
 W = Writer
 _ = W.getWho()
@@ -16,7 +18,10 @@ _ = W.getWho()
 
 ## main
 def ch_aphrodite(w: World):
-    return w.chapter("アプロディテの疑念",
+    return w.chapter("第八章　アプロディテの疑念",
+            ep_mount_path(w),
+            ep_canopus(w),
+            ep_new_member(w),
             ## NOTE
             ##  - 山道に入ったアルたち。だが野営中に何者かに襲われる
             ##  - 襲ったのは別のセブンスの生き残り、カノープスだった
