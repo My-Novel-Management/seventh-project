@@ -8,7 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-
+from src.c10_athena.e_competitive import ep_competitive
+from src.c10_athena.e_firstdead import ep_firstdead
+from src.c10_athena.e_rakuen import ep_rakuen
 ## defines
 W = Writer
 _ = W.getWho()
@@ -17,6 +19,9 @@ _ = W.getWho()
 ## main
 def ch_athena(w: World):
     return w.chapter("アテナの優越",
+            ep_rakuen(w),
+            ep_competitive(w),
+            ep_firstdead(w),
             ## NOTE
             ##  - 楽園で、またラボのような生活が始まると思っていたら、始まったのは新たな試験だった
             ##  - 楽園にはアトリアによく似たスタッフたちがいたが、以前は感じなかった違和感をアルたちは覚えていた
