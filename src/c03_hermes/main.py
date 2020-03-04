@@ -8,7 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-
+from src.c03_hermes.e_escape import ep_escape_labo
+from src.c03_hermes.e_explosion import ep_explosion_labo
+from src.c03_hermes.e_message import ep_message
 ## defines
 W = Writer
 _ = W.getWho()
@@ -17,6 +19,9 @@ _ = W.getWho()
 ## main
 def ch_hermes(w: World):
     return w.chapter("ヘルメスの驚愕",
+            ep_message(w),
+            ep_escape_labo(w),
+            ep_explosion_labo(w),
             ## NOTE
             ##  - 教授のメッセージで脱出しなければならないと知る
             ##  - 出入り口は蟲型により封鎖され、別の出口を探さなければならなくなる

@@ -8,7 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-
+from src.c04_hephaistos.e_breuccel import ep_breuccel
+from src.c04_hephaistos.e_ticket import ep_ticket
+from src.c04_hephaistos.e_train import ep_trans_railway
 ## defines
 W = Writer
 _ = W.getWho()
@@ -17,6 +19,9 @@ _ = W.getWho()
 ## main
 def ch_hephaistos(w: World):
     return w.chapter("ヘパイストスの焦燥",
+            ep_breuccel(w),
+            ep_ticket(w),
+            ep_trans_railway(w),
             ## NOTE
             ##  - ブロイセルの街にやってきた
             ##  - 何とかチケットを手に入れようとするが

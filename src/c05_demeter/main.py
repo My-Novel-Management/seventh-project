@@ -8,7 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-
+from src.c05_demeter.e_fakenews import ep_fake_news
+from src.c05_demeter.e_illeagal import ep_illeagal_way
+from src.c05_demeter.e_insect_attack import ep_insect_attack
 ## defines
 W = Writer
 _ = W.getWho()
@@ -17,6 +19,9 @@ _ = W.getWho()
 ## main
 def ch_demeter(w: World):
     return w.chapter("デメテルの信頼",
+            ep_insect_attack(w),
+            ep_fake_news(w),
+            ep_illeagal_way(w),
             ## NOTE
             ##  - 大陸鉄道が蟲型に襲われ、首都に行く手段を失う
             ##  - 立ち寄った街で情報屋から仕入れるが、騙されるアルたち
