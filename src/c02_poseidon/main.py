@@ -8,9 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-from src.c02_poseidon.e_inthelabo import ep_in_the_labo
-from src.c02_poseidon.e_murdercase import ep_murdercase
-from src.c02_poseidon.e_search import ep_search
+from src.c02_poseidon.e1_murdercase import ep_murdercase
+from src.c02_poseidon.e2_search import ep_search
+from src.c02_poseidon.e3_inthelabo import ep_in_the_labo
 ## defines
 W = Writer
 _ = W.getWho()

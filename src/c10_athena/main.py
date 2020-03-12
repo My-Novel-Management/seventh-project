@@ -8,9 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-from src.c10_athena.e_competitive import ep_competitive
-from src.c10_athena.e_firstdead import ep_firstdead
-from src.c10_athena.e_rakuen import ep_rakuen
+from src.c10_athena.e1_rakuen import ep_rakuen
+from src.c10_athena.e2_competitive import ep_competitive
+from src.c10_athena.e3_firstdead import ep_firstdead
 ## defines
 W = Writer
 _ = W.getWho()

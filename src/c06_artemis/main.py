@@ -8,9 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-from src.c06_artemis.e_collapsedcity import ep_collapsed_city
-from src.c06_artemis.e_reunion import ep_reunion
-from src.c06_artemis.e_revoyage import ep_re_voyage
+from src.c06_artemis.e1_collapsedcity import ep_collapsed_city
+from src.c06_artemis.e2_reunion import ep_reunion
+from src.c06_artemis.e3_revoyage import ep_re_voyage
 ## defines
 W = Writer
 _ = W.getWho()

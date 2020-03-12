@@ -8,9 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-from src.c05_demeter.e_fakenews import ep_fake_news
-from src.c05_demeter.e_illeagal import ep_illeagal_way
-from src.c05_demeter.e_insect_attack import ep_insect_attack
+from src.c05_demeter.e1_insect_attack import ep_insect_attack
+from src.c05_demeter.e2_fakenews import ep_fake_news
+from src.c05_demeter.e3_illeagal import ep_illeagal_way
 ## defines
 W = Writer
 _ = W.getWho()

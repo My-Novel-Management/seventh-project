@@ -8,9 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-from src.c07_ares.e_admire import ep_admire
-from src.c07_ares.e_heartbreak import ep_heartbreak
-from src.c07_ares.e_inoasis import ep_in_oasis
+from src.c07_ares.e1_inoasis import ep_in_oasis
+from src.c07_ares.e2_admire import ep_admire
+from src.c07_ares.e3_heartbreak import ep_heartbreak
 ## defines
 W = Writer
 _ = W.getWho()

@@ -8,9 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-from src.c08_aphrodite.e_canopus import ep_canopus
-from src.c08_aphrodite.e_mountpath import ep_mount_path
-from src.c08_aphrodite.e_newmember import ep_new_member
+from src.c08_aphrodite.e1_mountpath import ep_mount_path
+from src.c08_aphrodite.e2_canopus import ep_canopus
+from src.c08_aphrodite.e3_newmember import ep_new_member
 ## defines
 W = Writer
 _ = W.getWho()

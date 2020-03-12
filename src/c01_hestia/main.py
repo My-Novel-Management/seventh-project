@@ -8,9 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-from src.c01_hestia.e_7th import ep_7th
-from src.c01_hestia.e_leftchildren import ep_left_children
-from src.c01_hestia.e_subjects import ep_subjects
+from src.c01_hestia.e1_7th import ep_7th
+from src.c01_hestia.e2_subjects import ep_subjects
+from src.c01_hestia.e3_leftchildren import ep_left_children
 ## defines
 W = Writer
 _ = W.getWho()

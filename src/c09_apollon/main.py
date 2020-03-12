@@ -8,9 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-from src.c09_apollon.e_division import ep_division
-from src.c09_apollon.e_eachthought import ep_eachthought
-from src.c09_apollon.e_porttown import ep_porttown
+from src.c09_apollon.e1_division import ep_division
+from src.c09_apollon.e2_eachthought import ep_eachthought
+from src.c09_apollon.e3_porttown import ep_porttown
 ## defines
 W = Writer
 _ = W.getWho()

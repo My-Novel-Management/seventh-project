@@ -8,9 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-from src.c11_hera.e_exception import ep_exception
-from src.c11_hera.e_goodbye import ep_goodbye
-from src.c11_hera.e_murder import ep_murder_true
+from src.c11_hera.e1_exception import ep_exception
+from src.c11_hera.e2_goodbye import ep_goodbye
+from src.c11_hera.e3_murder import ep_murder_true
 ## defines
 W = Writer
 _ = W.getWho()

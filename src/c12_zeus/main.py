@@ -8,9 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-from src.c12_zeus.e_deneb import ep_deneb
-from src.c12_zeus.e_doctortalk import ep_doc_talk
-from src.c12_zeus.e_epilogue import ep_epilogue
+from src.c12_zeus.e1_doctortalk import ep_doc_talk
+from src.c12_zeus.e2_deneb import ep_deneb
+from src.c12_zeus.e3_epilogue import ep_epilogue
 ## defines
 W = Writer
 _ = W.getWho()

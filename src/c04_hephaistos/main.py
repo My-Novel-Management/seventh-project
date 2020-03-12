@@ -8,9 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-from src.c04_hephaistos.e_breuccel import ep_breuccel
-from src.c04_hephaistos.e_ticket import ep_ticket
-from src.c04_hephaistos.e_train import ep_trans_railway
+from src.c04_hephaistos.e1_breuccel import ep_breuccel
+from src.c04_hephaistos.e2_ticket import ep_ticket
+from src.c04_hephaistos.e3_train import ep_trans_railway
 ## defines
 W = Writer
 _ = W.getWho()

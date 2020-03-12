@@ -8,9 +8,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## local files
-from src.c03_hermes.e_escape import ep_escape_labo
-from src.c03_hermes.e_explosion import ep_explosion_labo
-from src.c03_hermes.e_message import ep_message
+from src.c03_hermes.e1_message import ep_message
+from src.c03_hermes.e2_escape import ep_escape_labo
+from src.c03_hermes.e3_explosion import ep_explosion_labo
 ## defines
 W = Writer
 _ = W.getWho()
