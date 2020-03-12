@@ -22,4 +22,6 @@ _ = W.getWho()
 def ep_firstdead(w: World):
     return w.episode("10-3.最初の死者",
             ## NOTE
-            )
+            ##  - カペラが最下位になる
+            ##  - 翌日、カペラが姿を消していた
+            note="試験結果が悪い$capellaが最下位となったその翌日、姿を消した")
