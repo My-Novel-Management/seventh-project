@@ -22,4 +22,7 @@ _ = W.getWho()
 def ep_heartbreak(w: World):
     return w.episode("7-3.失恋",
             ## NOTE
-            )
+            ##  - 姿を消した$spicaを探そうという$vegaと置いておこうという$altairで対立する
+            ##  - 結局戻ってきた$spica。事情を少しだけ話す
+            ##  - 再び七人になり、出発する
+            note="戻ってきた$spicaと合流し、再び旅立つ$altairたち")
