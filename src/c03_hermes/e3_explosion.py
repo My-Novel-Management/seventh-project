@@ -22,4 +22,7 @@ _ = W.getWho()
 def ep_explosion_labo(w: World):
     return w.episode("3-3.爆発",
             ## NOTE
-            )
+            ##  - アルが抜け穴を一人で進む
+            ##  - 途中で連絡も取れなくなるが、何とか出口を見つけて登る
+            ##  - 外に出たところでラボは爆発した
+            note="ラボの外に出た$altairは爆発し、折れてしまう建物を確認した")
