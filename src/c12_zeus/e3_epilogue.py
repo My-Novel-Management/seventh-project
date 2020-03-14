@@ -17,10 +17,27 @@ _ = W.getWho()
 
 
 ## scenes
+def sc_decision(w: World):
+    al, vega, deneb = W(w.altair), W(w.vega), W(w.deneb)
+    return w.scene("決断",
+            camera=w.altair,
+            stage=
+            )
+
+def sc_escape(w: World):
+    return w.scene("脱出",
+            )
+
+def sc_voyage(w: World):
+    return w.scene("新しい世界へ",
+            )
 
 ## episode
 def ep_epilogue(w: World):
     return w.episode("12-3.エピローグ：決断",
+            sc_decision(w),
+            sc_escape(w),
+            sc_voyage(w),
             ## NOTE
             ##  - デネブ（マザー）の要求を受け入れないアルたち
             ##  - 楽園を出て、荒廃した世界で自分たちのように残る者を探して旅に出た。一方楽園は宇宙へと飛び立つ
