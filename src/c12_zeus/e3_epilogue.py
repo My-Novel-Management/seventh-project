@@ -21,7 +21,8 @@ def sc_decision(w: World):
     al, vega, deneb = W(w.altair), W(w.vega), W(w.deneb)
     return w.scene("決断",
             camera=w.altair,
-            stage=
+            stage=w.on_rakuen_int,
+            day=w.in_rakuen7, time=w.at_morning,
             )
 
 def sc_escape(w: World):
