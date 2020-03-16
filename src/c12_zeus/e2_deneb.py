@@ -18,7 +18,11 @@ _ = W.getWho()
 
 ## scenes
 def sc_Immother(w: World):
+    alt, vega, deneb = W(w.altair), W(w.vega), W(w.deneb)
     return w.scene("私がマザー",
+            camera=w.altair,
+            stage=w.on_rakuen_int,
+            day=w.in_rakuen7, time=w.at_morning,
             )
 
 def sc_trueproject(w: World):

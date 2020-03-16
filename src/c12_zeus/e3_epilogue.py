@@ -18,7 +18,7 @@ _ = W.getWho()
 
 ## scenes
 def sc_decision(w: World):
-    al, vega, deneb = W(w.altair), W(w.vega), W(w.deneb)
+    alt, vega, deneb = W(w.altair), W(w.vega), W(w.deneb)
     return w.scene("決断",
             camera=w.altair,
             stage=w.on_rakuen_int,

@@ -17,10 +17,28 @@ _ = W.getWho()
 
 
 ## scenes
+def sc_vanish_capella(w: World):
+    alt, vega, deneb = W(w.altair), W(w.vega), W(w.deneb)
+    return w.scene("$capellaの消失",
+            camera=w.altair,
+            stage=w.on_rakuen_int,
+            day=w.in_rakuen2, time=w.at_morning,
+            )
+
+def sc_rebellion(w: World):
+    return w.scene("疑念と反抗",
+            )
+
+def sc_vanish_spica(w: World):
+    return w.scene("そして$spicaも消えた",
+            )
 
 ## episode
 def ep_exception(w: World):
     return w.episode("11-1.抗議",
+            sc_vanish_capella(w),
+            sc_rebellion(w),
+            sc_vanish_spica(w),
             ## NOTE
             ##  - カペラが姿を消して動揺するアルたち
             ##  - スピカはカペラを探そうとするが邪魔され、反抗して全部の授業をさぼった

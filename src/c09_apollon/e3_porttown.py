@@ -17,6 +17,21 @@ _ = W.getWho()
 
 
 ## scenes
+def sc_descent(w: World):
+    alt, vega, deneb = W(w.altair), W(w.vega), W(w.deneb)
+    return w.scene("下山",
+            camera=w.altair,
+            stage=w.on_mtsnow,
+            day=w.in_descent, time=w.at_afternoon,
+            )
+
+def sc_vanish_canopus(w: World):
+    return w.scene("$canopusは消えた",
+            )
+
+def sc_porttown(w: World):
+    return w.scene("港町",
+            )
 
 ## episode
 def ep_porttown(w: World):

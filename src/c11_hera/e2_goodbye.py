@@ -17,10 +17,28 @@ _ = W.getWho()
 
 
 ## scenes
+def sc_fear(w: World):
+    alt, vega, deneb = W(w.altair), W(w.vega), W(w.deneb)
+    return w.scene("恐怖心",
+            camera=w.altair,
+            stage=w.on_rakuen_int,
+            day=w.in_rakuen4, time=w.at_morning,
+            )
+
+def sc_proposal(w: World):
+    return w.scene("$rigelの提案",
+            )
+
+def sc_vanish_rigel(w: World):
+    return w.scene("そして$rigelは消えた",
+            )
 
 ## episode
 def ep_goodbye(w: World):
     return w.episode("11-2.別離",
+            sc_fear(w),
+            sc_proposal(w),
+            sc_vanish_rigel(w),
             ## NOTE
             ##  - スピカが消えたことに不信感を持ったリゲルはある提案をする
             ##  - リゲルはわざと最下位になる

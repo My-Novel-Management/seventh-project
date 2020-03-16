@@ -17,10 +17,28 @@ _ = W.getWho()
 
 
 ## scenes
+def sc_selection(w: World):
+    alt, vega, deneb = W(w.altair), W(w.vega), W(w.deneb)
+    return w.scene("選ばれし者",
+            camera=w.altair,
+            stage=w.on_rakuen_int,
+            day=w.in_rakuen7, time=w.at_morning,
+            )
+
+def sc_purpose(w: World):
+    return w.scene("プロジェクトの目的",
+            )
+
+def sc_true_culprit(w: World):
+    return w.scene("真犯人",
+            )
 
 ## episode
 def ep_doc_talk(w: World):
     return w.episode("12-1.教授の話",
+            sc_selection(w),
+            sc_purpose(w),
+            sc_true_culprit(w),
             ## NOTE
             ##  - 現れた教授はアルが選ばれたセブンスだと告げる
             ##  - 教授はセブンス・プロジェクトがセブンス・サピエンスを選抜する為の試験だったと告げる
